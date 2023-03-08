@@ -1,0 +1,16 @@
+<%- include('partials/header'); -%>
+    <h1>Página de publicações</h1>
+
+    <form action="/publicar" method="post">
+
+        <div class="mb-3">
+            <label>Titulo Post</label>
+            <input class="form-control" type="text" id="title-public" name="postTitle" />
+            <label>Artigo</label>
+            <textarea class="form-control" id="w3review" name="postBody" rows="5" cols="30"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Enviar artigo</button>
+    </form>
+
+
+<%- include('partials/footer'); -%>
